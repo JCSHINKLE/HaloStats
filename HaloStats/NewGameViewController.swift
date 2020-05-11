@@ -10,7 +10,7 @@ import UIKit
 
 class NewGameViewController: UIViewController {
 
-    //@IBOutlet var contentTextView: UITextView!
+    @IBOutlet var contentTextField: UITextField!
     
     var game: Game? = nil
 
@@ -22,13 +22,13 @@ class NewGameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //contentTextView.text = game!.content
+        contentTextField.text = game!.content
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        //game!.content = contentTextView.text
-        //GameManager.shared.saveGame(game: game!)
+        game!.content = contentTextField.text ?? ""
+        GameManager.shared.saveGame(game: game!)
     }
 }
