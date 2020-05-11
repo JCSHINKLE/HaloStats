@@ -42,8 +42,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frI-yg-gIL">
-                                <rect key="frame" x="20" y="438" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frI-yg-gIL">
+                                <rect key="frame" x="20" y="400" width="374" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imB-zQ-p0c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="763"/>
+            <point key="canvasLocation" x="1931.8840579710147" y="762.72321428571422"/>
         </scene>
         <!--Games-->
         <scene sceneID="ei1-1i-1Jf">
@@ -85,7 +85,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BOq-41-fgZ" kind="show" id="Yv7-9X-YQJ"/>
+                                    <segue destination="BOq-41-fgZ" kind="show" identifier="GameSegue" id="uPg-oD-Fv7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,7 +100,11 @@
                                 <segue destination="F2b-mj-3D5" kind="show" id="cgj-9Y-apW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="XrZ-9K-VNC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="XrZ-9K-VNC">
+                            <connections>
+                                <action selector="createNote" destination="L9e-fh-LkE" id="0kQ-Gx-49T"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OR2-eh-lwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -115,13 +119,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="New Game" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnJ-l7-qex">
-                                <rect key="frame" x="0.0" y="88" width="414" height="752"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGA-zp-pi1">
+                                <rect key="frame" x="20" y="827" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Delete Game"/>
+                                <connections>
+                                    <action selector="deleteGame" destination="BOq-41-fgZ" eventType="touchUpInside" id="Pjw-Rg-S6Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kills:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSc-df-T7l">
+                                <rect key="frame" x="20" y="123" width="100" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfR-4b-FRg">
+                                <rect key="frame" x="159" y="132" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ebI-dY-9gz"/>
@@ -130,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlK-hY-bLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755" y="70"/>
+            <point key="canvasLocation" x="2753.6231884057975" y="69.642857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wmd-nP-q3h">

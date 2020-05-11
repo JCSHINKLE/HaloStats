@@ -12,8 +12,21 @@ class GamesViewController: UITableViewController {
     
     var games: [Game] = []
     
+    
+    @IBAction func createNote() {
+        let _ = GameManager.shared.create()
+        reload()
+    }
+    
+    func reload() {
+        games = GameManager.shared.getGames()
+        tableView.reloadData()
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        reload()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,5 +42,12 @@ class GamesViewController: UITableViewController {
         cell.textLabel?.text = games[indexPath.row].content
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GameSegue",
+                let destination = segue.destination as? NewGameViewController,
+                let index = tableView.indexPathForSelectedRow?.row {
+            destination.game = games[index]
+        }
+    }
 }
