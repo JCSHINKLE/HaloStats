@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-nH-SKD">
-                                <rect key="frame" x="0.0" y="387" width="414" height="123"/>
+                                <rect key="frame" x="0.0" y="773" width="414" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="Begin"/>
@@ -174,6 +174,7 @@
                     <navigationItem key="navigationItem" id="E4J-Zh-SQD"/>
                     <connections>
                         <outlet property="contentTextField" destination="nfR-4b-FRg" id="yMq-qV-itn"/>
+                        <outlet property="testField" destination="EcC-Vj-tAJ" id="fcG-Gy-mJO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlK-hY-bLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

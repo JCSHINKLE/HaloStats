@@ -8,9 +8,13 @@
 import Foundation
 import UIKit
 
+var testing: String = "" // TESTING
+
 class NewGameViewController: UIViewController {
 
     @IBOutlet var contentTextField: UITextField!
+    
+    @IBOutlet var testField: UITextField! // TESTING
     
     var game: Game? = nil
 
@@ -23,6 +27,8 @@ class NewGameViewController: UIViewController {
         super.viewWillAppear(animated)
         
         contentTextField.text = game!.content
+        
+        testField.text = testing // TESTING
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,5 +36,6 @@ class NewGameViewController: UIViewController {
         
         game!.content = contentTextField.text ?? ""
         GameManager.shared.saveGame(game: game!)
+        testing = testField.text ?? "" // TESTING
     }
 }

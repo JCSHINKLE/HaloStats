@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class OpenScreenViewController: UIViewController {
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
