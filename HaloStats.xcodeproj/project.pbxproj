@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA733D9BAA361D996F301B7 /* libPods-HaloStats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B90C080C94612330DB6314 /* libPods-HaloStats.a */; };
+		BA2E6A2B247EAEA600C693CD /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E6A2A247EAEA600C693CD /* SummaryViewController.swift */; };
+		BA8F51AF246F4BA300B91D59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA8F51AE246F4BA300B91D59 /* GoogleService-Info.plist */; };
+		BA8F51B1247053E900B91D59 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8F51B0247053E900B91D59 /* StatsViewController.swift */; };
 		BAA7A4F92469C86A00DAA463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A4F82469C86A00DAA463 /* AppDelegate.swift */; };
 		BAA7A4FB2469C86A00DAA463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A4FA2469C86A00DAA463 /* SceneDelegate.swift */; };
 		BAA7A4FD2469C86A00DAA463 /* OpenScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A4FC2469C86A00DAA463 /* OpenScreenViewController.swift */; };
 		BAA7A5002469C86A00DAA463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA7A4FE2469C86A00DAA463 /* Main.storyboard */; };
 		BAA7A5022469C86A00DAA463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA7A5012469C86A00DAA463 /* Assets.xcassets */; };
 		BAA7A5052469C86A00DAA463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA7A5032469C86A00DAA463 /* LaunchScreen.storyboard */; };
-		BAA7A50D2469CEB100DAA463 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A50C2469CEB100DAA463 /* GamesViewController.swift */; };
-		BAA7A50F2469DF2A00DAA463 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A50E2469DF2A00DAA463 /* SummaryViewController.swift */; };
-		BAA7A5112469DF8600DAA463 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A5102469DF8600DAA463 /* NewGameViewController.swift */; };
+		BAA7A50D2469CEB100DAA463 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A50C2469CEB100DAA463 /* GamesListViewController.swift */; };
 		BAA7A5132469E22200DAA463 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7A5122469E22200DAA463 /* Game.swift */; };
+		BAB13225246F3FB1008F0252 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13224246F3FB1008F0252 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60EE6780BC0F3101E29A4A59 /* Pods-HaloStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaloStats.debug.xcconfig"; path = "Target Support Files/Pods-HaloStats/Pods-HaloStats.debug.xcconfig"; sourceTree = "<group>"; };
+		72B90C080C94612330DB6314 /* libPods-HaloStats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaloStats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9BDBE43E2B56003D9B1623 /* Pods-HaloStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaloStats.release.xcconfig"; path = "Target Support Files/Pods-HaloStats/Pods-HaloStats.release.xcconfig"; sourceTree = "<group>"; };
+		BA2E6A2A247EAEA600C693CD /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		BA8F51AE246F4BA300B91D59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA8F51B0247053E900B91D59 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		BAA7A4F52469C86A00DAA463 /* HaloStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaloStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA7A4F82469C86A00DAA463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA7A4FA2469C86A00DAA463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +37,10 @@
 		BAA7A5012469C86A00DAA463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA7A5042469C86A00DAA463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA7A5062469C86A00DAA463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAA7A50C2469CEB100DAA463 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		BAA7A50E2469DF2A00DAA463 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
-		BAA7A5102469DF8600DAA463 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		BAA7A50C2469CEB100DAA463 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		BAA7A5122469E22200DAA463 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		BAB13224246F3FB1008F0252 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAB13226246F450E008F0252 /* HaloStats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HaloStats.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA733D9BAA361D996F301B7 /* libPods-HaloStats.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054DADD61552BD97C67437D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60EE6780BC0F3101E29A4A59 /* Pods-HaloStats.debug.xcconfig */,
+				AB9BDBE43E2B56003D9B1623 /* Pods-HaloStats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B114B2BDA831909CC42CFE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72B90C080C94612330DB6314 /* libPods-HaloStats.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAA7A4EC2469C86900DAA463 = {
 			isa = PBXGroup;
 			children = (
 				BAA7A4F72469C86A00DAA463 /* HaloStats */,
 				BAA7A4F62469C86A00DAA463 /* Products */,
+				054DADD61552BD97C67437D0 /* Pods */,
+				B114B2BDA831909CC42CFE6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +93,38 @@
 		BAA7A4F72469C86A00DAA463 /* HaloStats */ = {
 			isa = PBXGroup;
 			children = (
+				BAB13226246F450E008F0252 /* HaloStats.entitlements */,
+				BAB56497246F3822000228AC /* Models */,
+				BAB56496246F3811000228AC /* Controllers */,
 				BAA7A4F82469C86A00DAA463 /* AppDelegate.swift */,
+				BA8F51AE246F4BA300B91D59 /* GoogleService-Info.plist */,
 				BAA7A4FA2469C86A00DAA463 /* SceneDelegate.swift */,
-				BAA7A4FC2469C86A00DAA463 /* OpenScreenViewController.swift */,
-				BAA7A50C2469CEB100DAA463 /* GamesViewController.swift */,
-				BAA7A5122469E22200DAA463 /* Game.swift */,
 				BAA7A4FE2469C86A00DAA463 /* Main.storyboard */,
-				BAA7A5102469DF8600DAA463 /* NewGameViewController.swift */,
-				BAA7A50E2469DF2A00DAA463 /* SummaryViewController.swift */,
 				BAA7A5012469C86A00DAA463 /* Assets.xcassets */,
 				BAA7A5032469C86A00DAA463 /* LaunchScreen.storyboard */,
 				BAA7A5062469C86A00DAA463 /* Info.plist */,
 			);
 			path = HaloStats;
+			sourceTree = "<group>";
+		};
+		BAB56496246F3811000228AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7A4FC2469C86A00DAA463 /* OpenScreenViewController.swift */,
+				BAA7A50C2469CEB100DAA463 /* GamesListViewController.swift */,
+				BA8F51B0247053E900B91D59 /* StatsViewController.swift */,
+				BA2E6A2A247EAEA600C693CD /* SummaryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAB56497246F3822000228AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7A5122469E22200DAA463 /* Game.swift */,
+				BAB13224246F3FB1008F0252 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAA7A5092469C86A00DAA463 /* Build configuration list for PBXNativeTarget "HaloStats" */;
 			buildPhases = (
+				A9FA4C74C622A1E13D8232FA /* [CP] Check Pods Manifest.lock */,
 				BAA7A4F12469C86900DAA463 /* Sources */,
 				BAA7A4F22469C86900DAA463 /* Frameworks */,
 				BAA7A4F32469C86900DAA463 /* Resources */,
@@ -138,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA7A5052469C86A00DAA463 /* LaunchScreen.storyboard in Resources */,
+				BA8F51AF246F4BA300B91D59 /* GoogleService-Info.plist in Resources */,
 				BAA7A5022469C86A00DAA463 /* Assets.xcassets in Resources */,
 				BAA7A5002469C86A00DAA463 /* Main.storyboard in Resources */,
 			);
@@ -145,18 +195,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9FA4C74C622A1E13D8232FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaloStats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAA7A4F12469C86900DAA463 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA7A50D2469CEB100DAA463 /* GamesViewController.swift in Sources */,
+				BAA7A50D2469CEB100DAA463 /* GamesListViewController.swift in Sources */,
 				BAA7A4FD2469C86A00DAA463 /* OpenScreenViewController.swift in Sources */,
 				BAA7A5132469E22200DAA463 /* Game.swift in Sources */,
+				BA2E6A2B247EAEA600C693CD /* SummaryViewController.swift in Sources */,
 				BAA7A4F92469C86A00DAA463 /* AppDelegate.swift in Sources */,
+				BA8F51B1247053E900B91D59 /* StatsViewController.swift in Sources */,
+				BAB13225246F3FB1008F0252 /* User.swift in Sources */,
 				BAA7A4FB2469C86A00DAA463 /* SceneDelegate.swift in Sources */,
-				BAA7A50F2469DF2A00DAA463 /* SummaryViewController.swift in Sources */,
-				BAA7A5112469DF8600DAA463 /* NewGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +374,10 @@
 		};
 		BAA7A50A2469C86A00DAA463 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EE6780BC0F3101E29A4A59 /* Pods-HaloStats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HaloStats/HaloStats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HaloStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,14 +387,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.cs50.HaloStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BAA7A50B2469C86A00DAA463 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9BDBE43E2B56003D9B1623 /* Pods-HaloStats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HaloStats/HaloStats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HaloStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.cs50.HaloStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
